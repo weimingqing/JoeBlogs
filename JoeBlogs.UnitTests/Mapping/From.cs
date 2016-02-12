@@ -37,7 +37,7 @@ namespace JoeBlogs.Tests.Mapping
             var result = Map.From.Category(category);
 
             Assert.AreEqual(category.Name, result.categoryName);
-            Assert.AreEqual(category.Description, result.description);
+            Assert.AreEqual(category.Description, result.categoryDescription;
             Assert.AreEqual(category.HtmlUrl, result.htmlUrl);
             Assert.AreEqual(category.ParentCategoryID.ToString(), result.parentId);
             Assert.AreEqual(category.RSSUrl, result.rssUrl);

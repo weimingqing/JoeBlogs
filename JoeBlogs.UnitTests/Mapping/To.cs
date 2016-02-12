@@ -27,11 +27,11 @@ namespace JoeBlogs.Tests.Mapping
         {
             var category = new XmlRpcCategory()
                                {
-                                   categoryId = "1234",
+                                   categoryId = 1234,
                                    categoryName = "Test Category Name",
-                                   description = "This is a test category",
+                                    categoryDescription = "This is a test category",
                                    htmlUrl = "www.test.com/cat",
-                                   parentId = "11",
+                                   parentId = 11,
                                    rssUrl = "www.testrssurl.com",
                                    title = "Test Category"
                                };
@@ -41,7 +41,7 @@ namespace JoeBlogs.Tests.Mapping
             Assert.AreEqual(category.categoryId, result.CategoryID.ToString());
             Assert.AreEqual(category.parentId, result.ParentCategoryID.ToString());
             Assert.AreEqual(category.categoryName, result.Name);
-            Assert.AreEqual(category.description, result.Description);
+            Assert.AreEqual(category.categoryDescription, result.Description);
             Assert.AreEqual(category.htmlUrl, result.HtmlUrl);
             Assert.AreEqual(category.rssUrl, result.RSSUrl);
             Assert.AreEqual(category.title, result.Name);
